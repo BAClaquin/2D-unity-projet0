@@ -6,6 +6,7 @@ public class BottleScript : MonoBehaviour
 {
 
     PlayerCharacter player;
+    public GameObject explosion;
 
     public int damage  = 10;
 
@@ -32,8 +33,9 @@ public class BottleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitObject)
     {
+        Instantiate(explosion, transform.position, Quaternion.identity);
         print("collision ma gueule");
-        if (hitObject.tag == "Player")
+        if (hitObject.tag == "Player" && player != null)
         {
             print("collision ma gueule");
             player.inflictDamage(damage);

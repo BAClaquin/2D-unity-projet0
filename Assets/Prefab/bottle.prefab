@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecbbcccade0d56418a240a273de14f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 8577771871276590520, guid: 9bc6edd562baca345b4112671df8021e,
+    type: 3}
   damage: 10
   maxSpeed: 13.5
   minSpeed: 5.6
